@@ -23,15 +23,30 @@ body { margin: 0; font-family: sans-serif; text-align: center; }
 h1 { font-size: 5pt; margin: 0; }
 #mapid { height: 60vh; }
 
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
 </style>
 </head>
 
 <body>
-<h1>自主管理歩道</h1>
+<h1>自主管理歩道@高島平</h1>
 <div id="mapid">
 </div>
-<img id=qrcode><script>addEventListener("load", () => qrcode.src = "https://forms.gle/4zCh4PwdPDhErJwD7" + encodeURIComponent(document.location))</script>
-<br>
+<a href="https://forms.gle/4zCh4PwdPDhErJwD7" class="btn-square">自主管理歩道を投稿する</a>
 <a href=https://udctak.jp/>UDCTak(アーバンデザインセンター高島平)</a>
 </body>
 </html>
